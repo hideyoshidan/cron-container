@@ -1,0 +1,2 @@
+* * * * * for i in `seq 0 10 59`;do (sleep ${i} ; docker exec laravel_php bash -c 'cd ./cron-test-app; php artisan batch:sample') & done > /test/sample.txt;
+
